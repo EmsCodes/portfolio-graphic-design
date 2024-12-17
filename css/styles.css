@@ -1,0 +1,106 @@
+body {
+  background-color: #fff0cd !important;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Roboto Slab", sans-serif;
+  padding-top: 15vw;
+  font-size: 15px !important;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 5vh !important;
+}
+h1 span {
+  text-decoration: overline;
+  text-decoration-color: #73d8ce;
+}
+
+h1::first-letter {
+  font-family: "Abril Fatface", serif;
+  font-size: 25px;
+  color: #73d8ce;
+  text-align: end;
+}
+
+.hero-section img {
+  max-height: 25vh;
+  width: 50vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portrait2 img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h2 {
+  font-family: "Abril Fatface", serif;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  text-transform: uppercase;
+  color: #884241 !important;
+}
+h2 :first-of-type {
+  text-align: start;
+}
+
+.h2-2 {
+  text-align: center;
+}
+
+.h2-3 {
+  text-align: end;
+}
+
+h3 {
+  font-family: "Abril Fatface", serif !important;
+}
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px !important;
+}
+
+.portfolio {
+  background-color: #EA886A;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.bento-item {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 35px;
+  transition: transform 0.3s ease;
+}
+
+.bento-item:hover {
+  transform: scale(1.05);
+}
+
+.bento-tall {
+  height: 410px;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+div .col {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section img {
+    -o-object-position: center;
+       object-position: center;
+    max-height: 35vh;
+  }
+}/*# sourceMappingURL=styles.css.map */
