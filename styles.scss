@@ -1,0 +1,122 @@
+@import "scss/variables.scss";
+
+body{
+    background-color: $primary-bg-color !important;
+    overflow-x: hidden;
+}
+h1{
+    font-family: $secondary-font;
+    padding-top: 15vw;
+    font-size: 15px !important;
+    text-transform:capitalize;
+    text-align: center;
+    
+    margin-bottom: 5vh !important;
+
+    span{
+        text-decoration:overline;
+        text-decoration-color: $blue-color;
+    }
+    
+   
+}
+
+// h1 .first-letter{
+//     font-family: $main-font;
+//     font-size: 25px;
+//     color: $blue-color;
+// }
+
+h1::first-letter{
+    font-family: $main-font;
+    font-size: 25px;
+    color: $blue-color;
+    text-align: end;
+}
+
+.hero-section{
+    img{
+        max-height: 25vh;
+        width: 50vw;
+        object-fit: cover;
+    }
+}
+.portrait2 img{
+    height: 100%;
+    object-fit:cover ;
+}
+
+
+h2{
+    
+   font-family: $main-font;
+   font-weight: bold !important;
+   font-size:30px !important;
+    text-transform: uppercase;
+   
+   color:$secondary-color !important;
+   
+
+   :first-of-type{
+    text-align: start;
+   }
+   
+}
+
+.h2-2{
+   text-align: center;
+}
+.h2-3{
+    text-align: end;
+ }
+h3{
+    font-family: $main-font !important;
+}
+body{
+    font-family: $secondary-font ;
+    font-size: 16px !important;
+    
+}
+
+ .portfolio{
+    background-color: $orange;
+    padding-top:100px ;
+    padding-bottom: 50px;
+}
+.bento-item {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding:35px;
+    transition: transform 0.3s ease;
+}
+
+.bento-item:hover {
+    transform: scale(1.05);
+}
+
+.bento-tall {
+    height: 410px;
+}
+
+.navbar-toggler{
+    border: none !important ;
+}
+
+div .col {
+    margin: 0;
+    padding:0;
+}
+
+@media screen and (min-width:768px) {
+    .hero-section{
+        img{
+            object-position: center;
+            max-height: 35vh;
+        }
+
+    }
+    
+}
