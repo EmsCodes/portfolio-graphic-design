@@ -27,15 +27,17 @@ h1{
 .parent {
     display: flex;
     flex-flow: column nowrap;
-    row-gap:20px;
+    justify-content: center;
 width: 100vw;
 align-items: center;
 // height: 1200px;
+
 
     div{
         // max-height: 400px;
         width: 100%;
         height: 100%;
+     
 
   
     }
@@ -46,8 +48,7 @@ align-items: center;
         a{
             position: absolute;
             bottom: 2%;
-            margin-left: 50%;
-            transform: translateX(-50%);
+            left:10%;
             z-index: 1;
             color:$secondary-color;
             text-decoration: none;
@@ -55,6 +56,7 @@ align-items: center;
     }
 
     .bento-item {
+        height: 250px !important;
         max-height: 450px;        
         width: 100%;
         object-fit: cover;
@@ -122,9 +124,19 @@ h2{
  }
 h3{
     font-family: $main-font !important;
+    font-size: 50px !important;
+    text-transform: uppercase;
+    width: 100vw;
+    text-align: center;
+    
+    padding:25px;
+    background-color: $orange;
+    margin-bottom: 0 !important;
 }
+
+
 body{
-    font-family: $secondary-font ;
+    font-family: $secondary-font;
     font-size: 16px !important;
     
 }
@@ -165,6 +177,7 @@ body{
 
 .tsumugi{
     padding: 50px;
+    background-color: white;
 }
 
 
@@ -181,62 +194,163 @@ body{
 }
 
 
+//projects
+
+
+
+h4{
+    font-family: $main-font;
+    width: 100%;
+    text-align: center;
+    font-size: 40px !important;
+    padding:25px;
+    color:$primary-bg-color !important;
+}
+
+//Semester project
+.project-container{
+    width: 100vw;
+    // background-color: $blue-color;
+    background-color: #17254e;
+
+
+padding-top: 50px;
+padding-bottom: 50px;
+
+
+    img{
+
+        width: 100%;
+        
+        
+
+       
+    }
+
+   
+
+   .logo{
+    padding: 25px;
+    margin:0 auto;
+   }
+
+   .small-logo{
+    padding: 10%;
+   }
+}
+
+
+.project-grid {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+ .img1{
+ }
+    div{
+        width: 100%;
+        
+
+    }
+
+    .img3{
+        img{
+           height: 350px;
+            object-fit: cover;
+        }
+    }
+   
+}
+    
+
+        
+
+
 @media screen and (min-width:400px) {
     .parent {
         display: flex;
         flex-flow:row wrap;
-        gap:10px;
+        // gap:10px;
     width: 100vw;
     justify-content: center;
     
         div{
-            background-color: green;
             height: 250px;
-            width: 45vw;
+            width: 50%;
         }
+
+        // .div1 .bento-item{
+        //     object-fit:contain;
+        // }
 
          .bento-item {
         height: 250px;        
-        width: 100%;
+        
         object-fit: cover;
         font-weight: bold;
         transition: transform 0.3s ease;
         
+
+      
         
         
     }
+
+    .tsumugi{
+        object-fit: contain !important;
+        padding: 25px;
     }
+    }
+
+    
+        
 
 }
 @media screen and (min-width:768px) {
 
     //PORTFOLIO
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
 
-    div{
-        background-color: green;
-    }
-    }
     
-    .div1 { grid-area: 1 / 1 / 5 / 5; }
-    .div2 { grid-area: 5 / 1 / 8 / 3; }
-    .div3 { grid-area: 5 / 3 / 8 / 5; }
-    .div4 { grid-area: 5 / 5 / 8 / 7; }
-    .div5 { grid-area: 1 / 5 / 3 / 7; }
-    .div6 { grid-area: 3 / 5 / 5 / 7; } 
-    .hero-section{
-        img{
-            height: 50vh;
-            object-position: center;
-            max-height: 350px;
+
+
+    //projects
+
+
+    .project-grid {
+        width: 100vw;
+        display: flex;
+        flex-flow: row wrap;
+        
+
+        .img1{
+            width:100vw ;
         }
-
-    }
     
+        .img2, .img3, .img4{
+            width: 50vw;
+            align-items: center;
+        }
+        .img3{
+            img{
+                object-fit: cover;
+            }
+        }
+        .logo {
+
+            
+            img{
+                width: 75%;
+            }
+           }
+
+    
+       
+    }
+
+
+
+
 }
+
