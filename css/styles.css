@@ -1,10 +1,10 @@
 body {
   background-color: #fff0cd !important;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 h1 {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Open sans", sans-serif;
   padding-top: 15vw;
   font-size: 15px !important;
   text-transform: capitalize;
@@ -13,14 +13,46 @@ h1 {
 }
 h1 span {
   text-decoration: overline;
-  text-decoration-color: #73d8ce;
+  text-decoration-color: #884241;
+}
+
+.parent {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 20px;
+  width: 100vw;
+  align-items: center;
+}
+.parent div {
+  width: 100%;
+  height: 100%;
+}
+.parent .div2 {
+  position: relative;
+}
+.parent .div2 a {
+  position: absolute;
+  bottom: 2%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: #884241;
+  text-decoration: none;
+}
+.parent .bento-item {
+  max-height: 450px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  font-weight: bold;
+  transition: transform 0.3s ease;
 }
 
 h1::first-letter {
-  font-family: "Abril Fatface", serif;
-  font-size: 25px;
-  color: #73d8ce;
-  text-align: end;
+  font-size: 30px;
+  font-weight: bold !important;
+  color: #884241;
+  font-family: "ratiomodern", serif;
 }
 
 .hero-section img {
@@ -37,8 +69,8 @@ h1::first-letter {
 }
 
 h2 {
-  font-family: "Abril Fatface", serif;
-  font-weight: bold !important;
+  font-family: "ratiomodern", serif;
+  font-weight: 800 !important;
   font-size: 30px !important;
   text-transform: uppercase;
   color: #884241 !important;
@@ -56,28 +88,44 @@ h2 :first-of-type {
 }
 
 h3 {
-  font-family: "Abril Fatface", serif !important;
+  font-family: "ratiomodern", serif !important;
 }
 
 body {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Open sans", sans-serif;
   font-size: 16px !important;
 }
 
 .portfolio {
-  background-color: #EA886A;
   padding-top: 100px;
   padding-bottom: 50px;
 }
+.portfolio .row img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
 
 .bento-item {
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   font-weight: bold;
-  padding: 35px;
   transition: transform 0.3s ease;
+}
+
+.poster {
+  height: 200px;
+}
+.poster img {
+  max-height: 200px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.tsumugi {
+  padding: 50px;
 }
 
 .bento-item:hover {
@@ -92,15 +140,61 @@ body {
   border: none !important;
 }
 
-div .col {
-  margin: 0;
-  padding: 0;
+@media screen and (min-width: 400px) {
+  .parent {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    width: 100vw;
+    justify-content: center;
+  }
+  .parent div {
+    background-color: green;
+    height: 250px;
+    width: 45vw;
+  }
+  .parent .bento-item {
+    height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
 }
-
 @media screen and (min-width: 768px) {
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+  .parent div {
+    background-color: green;
+  }
+  .div1 {
+    grid-area: 1/1/5/5;
+  }
+  .div2 {
+    grid-area: 5/1/8/3;
+  }
+  .div3 {
+    grid-area: 5/3/8/5;
+  }
+  .div4 {
+    grid-area: 5/5/8/7;
+  }
+  .div5 {
+    grid-area: 1/5/3/7;
+  }
+  .div6 {
+    grid-area: 3/5/5/7;
+  }
   .hero-section img {
+    height: 50vh;
     -o-object-position: center;
        object-position: center;
-    max-height: 35vh;
+    max-height: 350px;
   }
 }/*# sourceMappingURL=styles.css.map */
