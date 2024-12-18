@@ -1,5 +1,5 @@
 body {
-  background-color: #fff0cd !important;
+  background-color: #f6e9ca !important;
   overflow-x: hidden !important;
 }
 
@@ -19,7 +19,7 @@ h1 span {
 .parent {
   display: flex;
   flex-flow: column nowrap;
-  row-gap: 20px;
+  justify-content: center;
   width: 100vw;
   align-items: center;
 }
@@ -33,13 +33,13 @@ h1 span {
 .parent .div2 a {
   position: absolute;
   bottom: 2%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  left: 10%;
   z-index: 1;
   color: #884241;
   text-decoration: none;
 }
 .parent .bento-item {
+  height: 250px !important;
   max-height: 450px;
   width: 100%;
   -o-object-fit: cover;
@@ -89,6 +89,13 @@ h2 :first-of-type {
 
 h3 {
   font-family: "ratiomodern", serif !important;
+  font-size: 50px !important;
+  text-transform: uppercase;
+  width: 100vw;
+  text-align: center;
+  padding: 25px;
+  background-color: #EA886A;
+  margin-bottom: 0 !important;
 }
 
 body {
@@ -126,6 +133,7 @@ body {
 
 .tsumugi {
   padding: 50px;
+  background-color: white;
 }
 
 .bento-item:hover {
@@ -140,61 +148,89 @@ body {
   border: none !important;
 }
 
+h4 {
+  font-family: "ratiomodern", serif;
+  width: 100%;
+  text-align: center;
+  font-size: 40px !important;
+  padding: 25px;
+  color: #f6e9ca !important;
+}
+
+.project-container {
+  width: 100vw;
+  background-color: #17254e;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.project-container img {
+  width: 100%;
+}
+.project-container .logo {
+  padding: 25px;
+  margin: 0 auto;
+}
+.project-container .small-logo {
+  padding: 10%;
+}
+
+.project-grid {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.project-grid div {
+  width: 100%;
+}
+.project-grid .img3 img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (min-width: 400px) {
   .parent {
     display: flex;
     flex-flow: row wrap;
-    gap: 10px;
     width: 100vw;
     justify-content: center;
   }
   .parent div {
-    background-color: green;
     height: 250px;
-    width: 45vw;
+    width: 50%;
   }
   .parent .bento-item {
     height: 250px;
-    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     font-weight: bold;
     transition: transform 0.3s ease;
   }
+  .parent .tsumugi {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+    padding: 25px;
+  }
 }
 @media screen and (min-width: 768px) {
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
+  .project-grid {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
   }
-  .parent div {
-    background-color: green;
+  .project-grid .img1 {
+    width: 100vw;
   }
-  .div1 {
-    grid-area: 1/1/5/5;
+  .project-grid .img2, .project-grid .img3, .project-grid .img4 {
+    width: 50vw;
+    align-items: center;
   }
-  .div2 {
-    grid-area: 5/1/8/3;
+  .project-grid .img3 img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-  .div3 {
-    grid-area: 5/3/8/5;
-  }
-  .div4 {
-    grid-area: 5/5/8/7;
-  }
-  .div5 {
-    grid-area: 1/5/3/7;
-  }
-  .div6 {
-    grid-area: 3/5/5/7;
-  }
-  .hero-section img {
-    height: 50vh;
-    -o-object-position: center;
-       object-position: center;
-    max-height: 350px;
+  .project-grid .logo img {
+    width: 75%;
   }
 }/*# sourceMappingURL=styles.css.map */
