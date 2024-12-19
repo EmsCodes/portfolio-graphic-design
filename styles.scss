@@ -1,9 +1,10 @@
 @import "scss/variables.scss";
 @import "scss/partials.scss/_projects.scss";
 
-body{
+ body{
     background-color: $primary-bg-color !important;
     overflow-x: hidden !important;
+    max-width: 100vw;
 }
 h1{
     font-family: $secondary-font;
@@ -22,8 +23,9 @@ h1{
    
 }
 
-.navbarSupportedContent{
-    flex-basis: 0 !important;
+.navbar-collapse{
+    flex-basis: 50% !important;
+ flex-grow: 0 !important;
 }
 
 
@@ -197,10 +199,6 @@ body{
     transform: scale(1.05);
 }
 
-.bento-tall {
-    height: 410px;
-}
-
 .navbar-toggler{
     border: none !important ;
 }
@@ -255,9 +253,11 @@ body{
     //PORTFOLIO
 
 
-    
-
-
+    .hero-section{
+        img{
+            max-height: 35vh;
+        }
+    }
     
 
 

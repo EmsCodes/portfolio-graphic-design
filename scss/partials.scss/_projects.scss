@@ -13,19 +13,23 @@ h4{
     color:black;
 }
 
+.flex-fix{
+    display: flex;
+    justify-content: center;
+}
+
 .portfolio-section{
-    background-color:#17254e;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-
     
      
     div img{
-        width: 100vw;
+        width: 100vw; 
         max-width: 1000px;
         object-fit: cover;
+        margin:0 auto;
     }
 
 
@@ -48,21 +52,32 @@ h4{
     }
 }
 
+.project-container-1{
+    background-color:#17254e;
+
+}
 .project-container-2{
     background-color: black;
-}
-.project-container-1{
-    margin:0 auto;
-    .testing{
-        max-width: 1000px;
-        
-    }
 }
 .project-container-3{
     background-color: white;
 }
-.project-container-1, .project-container-2, .project-container-4, .project-container-5{
 
+.project-container-4{
+    background-color: $secondary-color;
+}
+
+.project-container-1, .project-container-2, .project-container-4, .project-container-5{
+    width: 100vw;
+    
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    .testing div{
+        max-width: 1000px;
+        margin:0 auto;
+        
+        
+    }
    
    
 }
