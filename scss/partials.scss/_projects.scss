@@ -18,10 +18,13 @@ h4{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 1200px;
+
+
+    
      
     div img{
         width: 100vw;
+        max-width: 1000px;
         object-fit: cover;
     }
 
@@ -29,6 +32,10 @@ h4{
     .flex-content{
         align-items: center;
         justify-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+
+    
 
 .fc{
     width: 75vw;
@@ -44,8 +51,30 @@ h4{
 .project-container-2{
     background-color: black;
 }
+.project-container-1{
+    margin:0 auto;
+    .testing{
+        max-width: 1000px;
+        
+    }
+}
 .project-container-3{
     background-color: white;
+}
+.project-container-1, .project-container-2, .project-container-4, .project-container-5{
+
+   
+   
+}
+
+.project-grid{
+
+
+    div{
+       
+    }
+     div{
+    }
 }
 
 
@@ -81,22 +110,22 @@ h4{
     }
    }
 
-    .portfolio-section{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        div img{
-            width: 40vw;
-            object-fit: cover;
+    // .portfolio-section{
+    //     display: flex;
+    //     flex-flow: row wrap;
+    //     justify-content: center;
+    //     align-items: center;
+    //     div img{
+    //         width: 40vw;
+    //         object-fit: cover;
 
-        }
+    //     }
 
-        div {
-            width: 50vw;
-        }
+    //     div {
+    //         width: 50vw;
+    //     }
     
-    }
+    // }
 
     .flex-content{
 
