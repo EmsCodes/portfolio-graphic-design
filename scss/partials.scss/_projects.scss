@@ -1,0 +1,72 @@
+@import '../variables.scss';
+// //projects
+
+
+
+h4{
+    font-family: $main-font !important;
+    width: 100%;
+    text-align: center;
+    font-size: 40px !important;
+    padding:25px;
+    // color:$primary-bg-color !important;
+    color:black;
+}
+
+.portfolio-section{
+    background-color:#17254e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+    div {
+        width: 100vw;
+    }
+
+
+    .flex-content{
+        align-items: center;
+        justify-items: center;
+
+.fc{
+    width: 75vw;
+    margin:0 auto;
+}
+        img{
+            width: 100%;
+            padding: 10%;
+        }
+    }
+}
+
+@media  screen and (min-width:450px) {
+
+    .portfolio-section{
+       
+        .flex-content{
+            display: flex;
+            flex-direction: row;
+            img{
+                width: 50vw;
+            }
+        }
+         
+    }
+    
+}
+
+@media  screen and (min-width:768px) {
+
+    .portfolio-section{
+        display: flex;
+        flex-flow: row wrap;
+
+
+        div {
+            width: 50vw;
+        }
+    
+    }
+    
+}
+

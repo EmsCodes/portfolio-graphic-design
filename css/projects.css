@@ -1,0 +1,17 @@
+h4 {
+  font-family: "ratiomodern", serif !important;
+  width: 100%;
+  text-align: center;
+  font-size: 40px !important;
+  padding: 25px;
+  color: black;
+}
+
+.portfolio-section {
+  display: flex;
+  flex-flow: row wrap;
+}
+.portfolio-section div {
+  width: 50vw;
+  background-color: red;
+}/*# sourceMappingURL=projects.css.map */

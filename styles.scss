@@ -1,4 +1,5 @@
 @import "scss/variables.scss";
+@import "scss/partials.scss/_projects.scss";
 
 body{
     background-color: $primary-bg-color !important;
@@ -24,6 +25,10 @@ h1{
 
 //PORTFOLIO
 
+.portfolio{
+    background-color: $orange;
+}
+
 .parent {
     display: flex;
     flex-flow: column nowrap;
@@ -31,12 +36,16 @@ h1{
 width: 100vw;
 align-items: center;
 // height: 1200px;
+max-width: 1000px;
+margin: 0 auto;
+background-color: $orange;
 
 
     div{
         // max-height: 400px;
         width: 100%;
         height: 100%;
+
      
 
   
@@ -136,7 +145,6 @@ h3{
 
 
 body{
-    font-family: $secondary-font;
     font-size: 16px !important;
     
 }
@@ -194,75 +202,6 @@ body{
 }
 
 
-//projects
-
-
-
-h4{
-    font-family: $main-font;
-    width: 100%;
-    text-align: center;
-    font-size: 40px !important;
-    padding:25px;
-    color:$primary-bg-color !important;
-}
-
-//Semester project
-.project-container{
-    width: 100vw;
-    // background-color: $blue-color;
-    background-color: #17254e;
-
-
-padding-top: 50px;
-padding-bottom: 50px;
-
-
-    img{
-
-        width: 100%;
-        
-        
-
-       
-    }
-
-   
-
-   .logo{
-    padding: 25px;
-    margin:0 auto;
-   }
-
-   .small-logo{
-    padding: 10%;
-   }
-}
-
-
-.project-grid {
-    width: 100vw;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    
- .img1{
- }
-    div{
-        width: 100%;
-        
-
-    }
-
-    .img3{
-        img{
-           height: 350px;
-            object-fit: cover;
-        }
-    }
-   
-}
-    
 
         
 
@@ -315,42 +254,16 @@ padding-bottom: 50px;
     
 
 
-    //projects
-
-
-    .project-grid {
-        width: 100vw;
-        display: flex;
-        flex-flow: row wrap;
-        
-
-        .img1{
-            width:100vw ;
-        }
     
-        .img2, .img3, .img4{
-            width: 50vw;
-            align-items: center;
-        }
-        .img3{
-            img{
-                object-fit: cover;
-            }
-        }
-        .logo {
-
-            
-            img{
-                width: 75%;
-            }
-           }
-
-    
-       
-    }
 
 
 
 
 }
 
+@media screen and (min-width:1200px) {
+
+   
+  
+
+}
