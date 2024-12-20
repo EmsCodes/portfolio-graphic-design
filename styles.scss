@@ -33,13 +33,13 @@
 }
 h1{
     font-family: $secondary-font;
-    padding-top: 10vh;
+    // padding-top: 5vh;
     font-size: calc(16px + ( 30 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
 
     text-transform:capitalize;
     text-align: center;
     
-    padding-bottom: 10vh !important;
+    // padding-bottom: 5vh !important;  
 
     span{
         border-top: .5px solid $secondary-color ;
@@ -135,6 +135,7 @@ background-color: $orange;
 .hero-section{
 margin:0 auto;
    max-width: 750px;
+   padding-bottom: 50px;
 
    
     img{

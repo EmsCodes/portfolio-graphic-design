@@ -80,7 +80,17 @@ h4 {
 }
 
 .project-container-5 {
-  background-color: #f6e9ca;
+  background-color: whitet;
+}
+.project-container-5 .testing {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.project-container-5 .carousel-caption p {
+  color: rgb(25, 25, 25);
+}
+.project-container-5 p {
+  color: rgb(25, 25, 25);
 }
 .project-container-5 h4 {
   font-family: "ratiomodern", serif !important;
@@ -98,7 +108,7 @@ h4 {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-.project-container-1 p, .project-container-2 p, .project-container-3 p, .project-container-4 p, .project-container-5 p {
+.project-container-1 .info p, .project-container-2 .info p, .project-container-3 .info p, .project-container-4 .info p, .project-container-5 .info p {
   width: 90vw;
   max-width: 800px;
   margin: 0 auto;
@@ -160,11 +170,9 @@ body {
 
 h1 {
   font-family: "Open sans", sans-serif;
-  padding-top: 10vh;
   font-size: calc(16px + 14 * (100vw - 300px) / 1300) !important;
   text-transform: capitalize;
   text-align: center;
-  padding-bottom: 10vh !important;
 }
 h1 span {
   border-top: 0.5px solid #884241;
@@ -225,6 +233,7 @@ p {
 .hero-section {
   margin: 0 auto;
   max-width: 750px;
+  padding-bottom: 50px;
 }
 .hero-section img {
   max-height: 25vh;

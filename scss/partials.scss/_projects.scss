@@ -115,8 +115,22 @@ h4{
 }
 }
 .project-container-5{
-    background-color:$primary-bg-color;
 
+    .testing{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .carousel-caption p {
+        color:$black-font;
+    }
+    background-color:whitet;
+    p{
+        
+        color:$black-font;
+    
+    
+    
+    }
 
 h4{
     font-family: $main-font !important;
@@ -132,13 +146,15 @@ h4{
     .info{
         padding-top: 30px;
         padding-bottom: 50px;
+
+        p{
+            width: 90vw;
+            max-width: 800px;
+            margin:0 auto;
+            margin-bottom: 20px;
+        }
     }
-    p{
-        width: 90vw;
-        max-width: 800px;
-        margin:0 auto;
-        margin-bottom: 20px;
-    }
+   
     width: 100vw;
     
     padding-top: 15vh;
