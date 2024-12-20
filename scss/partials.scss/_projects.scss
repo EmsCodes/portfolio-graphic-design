@@ -4,26 +4,21 @@
 
 
 h4{
-    font-family: $main-font !important;
-    width: 100%;
-    text-align: center;
-    font-size: 40px !important;
-    padding:25px;
-    // color:$primary-bg-color !important;
-    color:black;
-}
+    text-transform: uppercase;
+    font-size: calc(25px + ( 60 - 25) * ((100vw - 300px) / (1600 - 300))) !important;
 
-.flex-fix{
-    display: flex;
-    justify-content: center;
-}
+
+    }
 
 .portfolio-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    
+   
+    .text-1{
+        color:$primary-bg-color;
+    }
      
     div img{
         width: 100vw; 
@@ -39,7 +34,7 @@ h4{
         max-width: 1000px;
         margin: 0 auto;
 
-    
+   
 
 .fc{
     width: 75vw;
@@ -55,19 +50,73 @@ h4{
 .project-container-1{
     background-color:#17254e;
 
+   
+
+
+    p{
+        
+        color:$primary-bg-color;
+  
+
+
+    }
+
+h4{
+    font-family: $main-font !important;
+    width: 100%;
+    text-align: center;
+    // color:$primary-bg-color !important;
+    color:$primary-bg-color;
+}
+
 }
 .project-container-2{
     background-color: black;
+
+h4{
+    font-family: $main-font !important;
+    width: 100%;
+    text-align: center;
+    // color:$primary-bg-color !important;
+    color:black;
+}
 }
 .project-container-3{
     background-color: white;
+
+h4{
+    font-family: $main-font !important;
+    width: 100%;
+    text-align: center;
+    // color:$primary-bg-color !important;
+    color:black;
+}
 }
 
 .project-container-4{
     background-color: $secondary-color;
+
+h4{
+    font-family: $main-font !important;
+    width: 100%;
+    text-align: center;
+    // color:$primary-bg-color !important;
+    color:black;
+}
 }
 
-.project-container-1, .project-container-2, .project-container-4, .project-container-5{
+.project-container-1, .project-container-2,.project-container-3, .project-container-4, .project-container-5{
+
+    .info{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    p{
+        width: 90vw;
+        max-width: 800px;
+        margin:0 auto;
+        margin-bottom: 20px;
+    }
     width: 100vw;
     
     padding-top: 15vh;

@@ -6,27 +6,59 @@
     overflow-x: hidden !important;
     max-width: 100vw;
 }
+
+.navbar-nav{
+    font-family: $main-font !important;
+    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
+    
+    .nav-item a{
+        color:$secondary-color !important;
+    }
+    .nav-item:hover{
+        color:black !important;
+    }
+}
+
+.logo-ems{
+
+    font-family: $main-font;
+    color:$secondary-color !important;
+    font-weight: 800 !important;
+    font-size: calc(25px + ( 40 - 25) * ((100vw - 300px) / (1600 - 300))) !important;
+    margin-left: 5%;
+}
 h1{
     font-family: $secondary-font;
     padding-top: 15vw;
-    font-size: 15px !important;
+    font-size: calc(16px + ( 30 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
+
     text-transform:capitalize;
     text-align: center;
     
     margin-bottom: 5vh !important;
 
     span{
-        text-decoration:overline;
-        text-decoration-color: $secondary-color;
+        border-top: .5px solid $secondary-color ;
+        padding-top: 5px;
     }
     
    
 }
 
-.navbar-collapse{
-    flex-basis: 50% !important;
- flex-grow: 0 !important;
+h1::first-letter{
+    font-size: calc(30px + ( 60 - 30) * ((100vw - 300px) / (1600 - 300))) !important;
+
+    font-weight: bold !important;
+    color: $secondary-color;
+    font-family: $main-font;
 }
+
+
+p{
+    font-size: calc(16px + ( 20 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-weight: 100;
+}
+
 
 
 //PORTFOLIO
@@ -47,7 +79,7 @@ margin: 0 auto;
 background-color: $orange;
 
 
-    div{
+    div a{
         // max-height: 400px;
         width: 100%;
         height: 100%;
@@ -60,7 +92,7 @@ background-color: $orange;
     .div2{
         position:relative;
 
-        a{
+        .vecteezy{
             position: absolute;
             bottom: 2%;
             left:10%;
@@ -95,12 +127,6 @@ background-color: $orange;
 //     color: $blue-color;
 // }
 
-h1::first-letter{
-    font-size: 30px;
-    font-weight: bold !important;
-    color: $secondary-color;
-    font-family: $main-font;
-}
 
 .hero-section{
     img{
@@ -169,7 +195,7 @@ body{
         }
     
 }
-.bento-item {
+.bento-item a{
     // height: 200px;        
     width: 100%;
     object-fit: cover;
@@ -265,9 +291,14 @@ body{
 
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:992px) {
 
    
-  
+    .navbar-collapse{
+        flex-basis: 50% !important;
+     flex-grow: 0 !important;
+     transform: translatex(-15%);
+    }
+    
 
 }
