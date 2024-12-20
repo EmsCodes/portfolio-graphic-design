@@ -71,14 +71,23 @@ h4{
 
 }
 .project-container-2{
-    background-color: black;
+    background-color: rgb(8, 8, 8);
 
 h4{
     font-family: $main-font !important;
     width: 100%;
     text-align: center;
     // color:$primary-bg-color !important;
-    color:black;
+    color:$primary-bg-color;
+}
+
+
+p{
+        
+    color:$primary-bg-color;
+
+
+
 }
 }
 .project-container-3{
@@ -89,19 +98,32 @@ h4{
     width: 100%;
     text-align: center;
     // color:$primary-bg-color !important;
-    color:black;
+    color:$black-font;
 }
 }
 
 .project-container-4{
-    background-color: $secondary-color;
+    background-color:#fcca70;
+
 
 h4{
     font-family: $main-font !important;
     width: 100%;
     text-align: center;
     // color:$primary-bg-color !important;
-    color:black;
+    color:$black-font;
+}
+}
+.project-container-5{
+    background-color:$primary-bg-color;
+
+
+h4{
+    font-family: $main-font !important;
+    width: 100%;
+    text-align: center;
+    // color:$primary-bg-color !important;
+    color:$black-font;
 }
 }
 

@@ -47,13 +47,16 @@ h4 {
 }
 
 .project-container-2 {
-  background-color: black;
+  background-color: rgb(8, 8, 8);
 }
 .project-container-2 h4 {
   font-family: "ratiomodern", serif !important;
   width: 100%;
   text-align: center;
-  color: black;
+  color: #f6e9ca;
+}
+.project-container-2 p {
+  color: #f6e9ca;
 }
 
 .project-container-3 {
@@ -63,17 +66,27 @@ h4 {
   font-family: "ratiomodern", serif !important;
   width: 100%;
   text-align: center;
-  color: black;
+  color: rgb(25, 25, 25);
 }
 
 .project-container-4 {
-  background-color: #884241;
+  background-color: #fcca70;
 }
 .project-container-4 h4 {
   font-family: "ratiomodern", serif !important;
   width: 100%;
   text-align: center;
-  color: black;
+  color: rgb(25, 25, 25);
+}
+
+.project-container-5 {
+  background-color: #f6e9ca;
+}
+.project-container-5 h4 {
+  font-family: "ratiomodern", serif !important;
+  width: 100%;
+  text-align: center;
+  color: rgb(25, 25, 25);
 }
 
 .project-container-1, .project-container-2, .project-container-3, .project-container-4, .project-container-5 {
